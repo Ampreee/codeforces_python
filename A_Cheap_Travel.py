@@ -1,0 +1,11 @@
+n,m,a,b=map(int,input().split())
+x=m//b
+c=0
+if(x<a):
+    while(n>0):
+        if(n<m):
+            break
+        n-=m
+        c+=b
+c+=(n*a)
+print(c)

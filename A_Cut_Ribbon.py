@@ -1,0 +1,12 @@
+n,a,b,c=map(int,input().split())
+m=0
+i=0
+while(i*a<=n):
+    j=0
+    while(i*a+j*b<=n):
+        z=n-i*a-j*b
+        if(z%c==0):
+            m=max(m,i+j+(z//c))
+        j+=1
+    i+=1
+print(m)
